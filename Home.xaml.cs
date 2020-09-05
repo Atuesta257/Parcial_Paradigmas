@@ -39,7 +39,14 @@ namespace Taller
 
         private void btnComprar_Click(object sender, RoutedEventArgs e)
         {
-            
+            int count = int.Parse(txtb_contador.Text);
+            count++;
+            txtb_contador.Text = count.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            txtb_contador.Text = "0";
         }
     }
 }
